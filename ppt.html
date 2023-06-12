@@ -1,67 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>priedra pael o tijera</title>
-    <script>
-         //funcion para las alerta de elecciones
-
-function alertaDeElcciones(quienelige, eleccion){
-    if(eleccion==1){
-        alert (" El "+ quienelige + " Eligio piedra")
-    } else if(eleccion==2){
-        alert("el "+ quienelige+" eligio papel")
-    } else if(eleccion==3){
-        alert("el "+ quienelige +" Eligio tijera")
-    } else{
-        alert("el "+ quienelige +" Eligio mal")
-    }
-}
-// funcion numero aleatorio
-
-
-function  numeroAleatorio(min, max){
-    return Math.floor(Math.random()*(max-min+1)+min)
-}
-
-
-    // Funcion para determir elccion  ganador
-
-
-       function quienGanaEntre(elccionjugador,elccionpc){
-        if(elccionjugador==elccionpc)
-        {
-            alert("empate")
-        } else if (elccionjugador==1 && elccionpc==3) {
-            alert("ganaste")
-        } else if(elccionjugador==2 && elccionpc==1){
-            alert("ganaste")
-        } else if(elccionjugador==3 && elccionjugador==2){
-            alert("ganaste")
-        } else{
-        alert("perdiste")
-        }
-       }
-
-
-       //elccion del jugador
-let elccionDelJugador=0
-elccionDelJugador=prompt(" elige: 1 para piedra, 2 para papel y 3 para tijeras")
-alertaDeElcciones("jugador", elccionDelJugador)
-
-
-//elecion del pc
-let elccionDelPc=numeroAleatorio(1, 3)
-alertaDeElcciones("pc", elccionDelPc)
-
-
-quienGanaEntre(elccionDelJugador,elccionDelPc)
-
-    </script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Algoritmo piedra, papel o tijera</title>
+        <script src ="codigo.js"></script>
+    </head>
+    <body>
+        <h1>Piedra, papel o tijera</h1>
+    </body>
 </html>
