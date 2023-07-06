@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <script src ="./JS/pokemon.js"></script>
+</head>
+<body>
+    <h1><center>Pokemon</h1> </center >  
+    <section Id="selccionar-pokemon">
+ <center><h2>elige tu Pokemon</h2></center>   
+<center>
+ <label for="charmander">charmander</label>
+<input type="radio" name="Pokemon" id="charmander">
+<label for="Squirtle">Squirtle</label>
+<input type="radio" name="Pokemon" id="squirtle">
+<label for="bulbasur">bulbasur</label>
+<input type="radio" name="Pokemon" id="bulbasur" >
+<button id="boton-Pokemon">seleccionar</button>
+</center>
+</section>
+
+
+
+<section id="seleccionar-ataque">
+    
+    
+    <center><h2>elige tu ataque</h2></center>
+<p>
+<center>Tu Pokemon <span id="Pokemon-jugador"></span> tiene <span>3</span> vidas</center>
+</p>
+<center>el Pokemon <span id="Pokemon-enemigo"></span> del enemigo tiene <span>3</span> vidas</center>
+    <p>
+    <center>
+    <button>fuego</button>
+    <button>agua</button>
+    <button>tierra</button>
+    
+     </center>
+</p>
+</section>
+
+<section id="mensajes">
+<p>
+    <center>
+   Tu Pokemon ataco con fuego, el Pokemon del enemigo ataco con tierra.GANASTE
+</center>
+</p>
+</section>
+<section id="reinicar">
+ <center><button>reinicar</button></center>
+</section>
+</body>
+</html>
