@@ -2,54 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
-    <script src ="./JS/pokemon.js"></script>
+    <title>POKEMON!</title>
+    <script src="./js/pokemon.js"></script>
 </head>
-<body>
-    <h1><center>Pokemon</h1> </center >  
-    <section Id="selccionar-pokemon">
- <center><h2>elige tu Pokemon</h2></center>   
-<center>
- <label for="charmander">charmander</label>
-<input type="radio" name="Pokemon" id="charmander">
-<label for="Squirtle">Squirtle</label>
-<input type="radio" name="Pokemon" id="squirtle">
-<label for="bulbasur">bulbasur</label>
-<input type="radio" name="Pokemon" id="bulbasur" >
-<button id="boton-Pokemon">seleccionar</button>
-</center>
-</section>
+ <body>
+    <h1>POKEMON! 🔥💧🌱</h1>
 
+    <section id="seleccionar-mascota">
+        <h2>Elige tu mascota:</h2>
 
+        <label for="Charmander">Charmander</label>
+        <input type="radio" name="mascota" id="Charmander"/>
 
-<section id="seleccionar-ataque">
-    
-    
-    <center><h2>elige tu ataque</h2></center>
-<p>
-<center>Tu Pokemon <span id="Pokemon-jugador"></span> tiene <span>3</span> vidas</center>
-</p>
-<center>el Pokemon <span id="Pokemon-enemigo"></span> del enemigo tiene <span>3</span> vidas</center>
-    <p>
-    <center>
-    <button>fuego</button>
-    <button>agua</button>
-    <button>tierra</button>
-    
-     </center>
-</p>
-</section>
+        <label for="Bulbasaur">Bulbasaur</label>
+        <input type="radio" name="mascota" id="Bulbasaur">
 
-<section id="mensajes">
-<p>
-    <center>
-   Tu Pokemon ataco con fuego, el Pokemon del enemigo ataco con tierra.GANASTE
-</center>
-</p>
-</section>
-<section id="reinicar">
- <center><button>reinicar</button></center>
-</section>
+        <label for="Squirte">Squirte</label>
+        <input type="radio" name="mascota" id="Squirte">
+
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque:</h2>
+
+        <p>Tu mascota <span id='mascota-jugador'></span> tiene <span> 3</span> vidas</p>
+        <p>Las mascota <span id="mascota-enemigo"></span> del enemigo tiene <span> 3</span> vidas</p>
+
+        <p>
+            <button id="boton-fuego">Fuego 🔥</button>
+            <button id="boton-agua">Agua 💧</button>
+            <button ide="boton-tierra">Tierra 🌱</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+        <p>Tu mascota atacó con FUEGO, las mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+    </section>
+
+    <section id="reiniciar">
+        <button>Reiniciar</button>
+    </section>
 </body>
 </html>
