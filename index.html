@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,44 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEMON!</title>
     <script src="./js/pokemon.js"></script>
+   
 </head>
  <body>
-    <h1>POKEMON! 🔥💧🌱</h1>
-
+<center>  <h1>POKEMON! 🔥💧🌱</h1></center>
     <section id="seleccionar-mascota">
+    <center>
         <h2>Elige tu mascota:</h2>
-
         <label for="Charmander">Charmander</label>
         <input type="radio" name="mascota" id="Charmander"/>
-
         <label for="Bulbasaur">Bulbasaur</label>
         <input type="radio" name="mascota" id="Bulbasaur">
-
         <label for="Squirte">Squirte</label>
         <input type="radio" name="mascota" id="Squirte">
-
         <button id="boton-mascota">Seleccionar</button>
+    </center>
     </section>
-
     <section id="seleccionar-ataque">
-        <h2>Elige tu ataque:</h2>
+       <center><h2>Elige tu ataque:</h2></center>
 
-        <p>Tu mascota <span id='mascota-jugador'></span> tiene <span> 3</span> vidas</p>
-        <p>Las mascota <span id="mascota-enemigo"></span> del enemigo tiene <span> 3</span> vidas</p>
-
+    <center> <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+       </center>
         <p>
+            <center>
             <button id="boton-fuego">Fuego 🔥</button>
             <button id="boton-agua">Agua 💧</button>
-            <button ide="boton-tierra">Tierra 🌱</button>
-        </p>
+            <button id="boton-tierra">Tierra 🌱</button>
+            </center>
+            </p>
     </section>
 
     <section id="mensajes">
-        <p>Tu mascota atacó con FUEGO, las mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+    <center>
+       
+    </center>
     </section>
-
     <section id="reiniciar">
-        <button>Reiniciar</button>
-    </section>
+    <center>
+    <button id="boton-reiniciar">reinicio </botton>
+    </center>
+    </section> 
 </body>
 </html>
