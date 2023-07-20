@@ -6,40 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEMON!</title>
     <script src="./js/pokemon.js"></script>
-   
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
  <body>
-<center>  <h1>POKEMON! 🔥💧🌱</h1></center>
     <section id="seleccionar-mascota">
-    <center>
+        <center>
         <h2>Elige tu mascota:</h2>
-        <label for="Charmander">Charmander</label>
-        <input type="radio" name="mascota" id="Charmander"/>
-        <label for="Bulbasaur">Bulbasaur</label>
-        <input type="radio" name="mascota" id="Bulbasaur">
-        <label for="Squirte">Squirte</label>
-        <input type="radio" name="mascota" id="Squirte">
-        <button id="boton-mascota">Seleccionar</button>
+       <h1 class ="titulo">POKEMON! 🔥💧🌱</h1>
+        <h2 class="subtitulo" >Elige tu mascota:</h2>
     </center>
-    </section>
-    <section id="seleccionar-ataque">
-       <center><h2>Elige tu ataque:</h2></center>
+    <center>
+        <div class="tarjetas">
+            <label class ="tarjeta-de-pokemon" for="Charmander">
+                <p>Charmander</p>
+                <img src="./assets/charmander 3.png" alt="Charmander">
+            </label>
+            <input type="radio" name="mascota" id="Charmander"/>
 
-    <center> <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
-       </center>
-        <p>
+            <label class="tarjeta-de-pokemon" for="Bulbasaur">
+                <p>Bulbasaur</p>
+                <img src="./assets/bulbasaur 3.png" alt="Bulbasaur">
+            </label>
+            <input type="radio" name="mascota" id="Bulbasaur">
+
+            <label class="tarjeta-de-pokemon" for="Squirte">
+                <p>Squirte</p>
+                <img src="./assets/squirtle 3.png" alt="Squirte">
+            </label>
+            <input type="radio" name="mascota" id="Squirte">
+
+        </div>
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+
             <center>
-            <button id="boton-fuego">Fuego 🔥</button>
-            <button id="boton-agua">Agua 💧</button>
-            <button id="boton-tierra">Tierra 🌱</button>
+                <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
             </center>
-            </p>
+            
     </section>
 
     <section id="mensajes">
     <center>
-       
+        <div>
+            <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+            <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+        </div>  
     </center>
     </section>
     <section id="reiniciar">
